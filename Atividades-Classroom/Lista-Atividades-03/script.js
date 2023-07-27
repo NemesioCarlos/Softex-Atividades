@@ -1,4 +1,4 @@
-//  *GERAL
+  *GERAL
 // 1. Defina o que é uma variável na programação. 
  É um espaço  na memória do computador para armazenar dados que podem ser manipulados.
 
@@ -252,27 +252,42 @@ for (let i = 0; i < produtos; i++) {
 
 * Typeof
 
-1. Crie uma variável chamada "numero" e atribua a ela um número qualquer. Verifique o tipo de dado
-dessa variável usando "typeof".
+/*1. Crie uma variável chamada "numero" e atribua a ela um número qualquer. Verifique o tipo de dado
+dessa variável usando "typeof".*/
+    const number = 3000
+    console.log(typeof(number))
 
-2. Crie uma variável chamada "texto" e atribua a ela uma string qualquer. Verifique o tipo de dado
-dessa variável usando "typeof".
+/*2. Crie uma variável chamada "texto" e atribua a ela uma string qualquer. Verifique o tipo de dado
+  dessa variável usando "typeof"*/
 
-3. Crie uma variável chamada "booleano" e atribua a ela um valor booleano ("true" ou "false").
-Verifique o tipo de dado dessa variável usando "typeof".
+    const text = "Etmologia"
+    console.log(typeof(text))
 
-4. Crie uma variável chamada "array" e atribua a ela um array vazio. Verifique o tipo de dado dessa
-variável usando "typeof".
+/*3. Crie uma variável chamada "booleano" e atribua a ela um valor booleano ("true" ou "false").
+Verifique o tipo de dado dessa variável usando "typeof".*/
+    const boolean = true
+    console.log(typeof(boolean))
 
-5. Crie uma variável chamada "objeto" e atribua a ela um objeto vazio. Verifique o tipo de dado dessa
-variável usando "typeof".
+/*4. Crie uma variável chamada "array" e atribua a ela um array vazio. Verifique o tipo de dado dessa
+variável usando "typeof".*/
+    const array = []
+    console.log(typeof(array))
 
-6. Crie uma variável chamada "nulo" e atribua a ela o valor nulo ("null"). Verifique o tipo de dado
-dessa variável usando typeof.
+/*5. Crie uma variável chamada "objeto" e atribua a ela um objeto vazio. Verifique o tipo de dado dessa
+variável usando "typeof".*/
+    const object = {}
+    console.log(typeof(object))
 
-7. Crie uma variável chamada "indefinido" sem atribuir nenhum valor. Verifique o tipo de dado dessa
-variável usando "typeof".
+/*6. Crie uma variável chamada "nulo" e atribua a ela o valor nulo ("null"). Verifique o tipo de dado
+dessa variável usando typeof.*/
 
+    const nulo = null
+    console.log(typeof nulo)
+
+/*7. Crie uma variável chamada "indefinido" sem atribuir nenhum valor. Verifique o tipo de dado dessa
+variável usando "typeof".*/
+    const undefinned = undefined
+    console.log(typeof undefinned)
 
 * Operadores lógicos
 
@@ -287,8 +302,8 @@ igualdade ("==").*/
       console.log("Os numeros são diferente")
     }
 
-2. Crie uma estrutura condicional que verifica se dois números são diferentes utilizando o operador de
-diferença ("!=").
+/*2. Crie uma estrutura condicional que verifica se dois números são diferentes utilizando o operador de
+diferença ("!=").*/
 
     const n1 = 20
     const n2 = 50
@@ -299,8 +314,8 @@ diferença ("!=").
       console.log("Os numeros são iguais")
     }
     
-3. Crie uma estrutura condicional que verifica se um número é maior que outro utilizando o operador
-de maior que (">").
+/*3. Crie uma estrutura condicional que verifica se um número é maior que outro utilizando o operador
+de maior que (">").*/
     const n1 = 25
     const n2 = 30
     
@@ -310,8 +325,9 @@ de maior que (">").
       console.log(`O numero ${n1} é menor que o numero ${n2}`)
     } 
 
-4. Crie uma estrutura condicional que verifica se um número é menor que outro utilizando o operador
-de menor que ("<").
+/*4. Crie uma estrutura condicional que verifica se um número é menor que outro utilizando o operador
+de menor que ("<").*/
+
 const n1 = 200
 const n2 = 422
 
@@ -321,8 +337,8 @@ if (n1 < n2) {
   console.log(`O numero ${n1} é maior que o numero ${n2}`)
 } 
 
-5. Crie uma estrutura condicional que verifica se um número é maior ou igual a outro utilizando o
-operador de maior ou igual a (">=").
+/*5. Crie uma estrutura condicional que verifica se um número é maior ou igual a outro utilizando o
+operador de maior ou igual a (">=").*/
 
 const n1 = 3000
 const n2 = 3000
@@ -333,8 +349,8 @@ if (n1 >= n2) {
   console.log(`O numero ${n1} é menor ou menor ou igual numero ${n2}`)
 } 
 
-6. Crie uma estrutura condicional que verifica se um número é menor ou igual a outro utilizando o
-operador de menor ou igual a ("<=").
+/*6. Crie uma estrutura condicional que verifica se um número é menor ou igual a outro utilizando o
+operador de menor ou igual a ("<=").*/
 
 const n1 = 86
 const n2 = 96
@@ -359,23 +375,78 @@ if(n1 ) {
 } 
 
 
-8. Crie uma estrutura condicional que verifica se pelo menos uma das condições é verdadeira
-utilizando o operador lógico OR ("||").
+/*8. Crie uma estrutura condicional que verifica se pelo menos uma das condições é verdadeira
+utilizando o operador lógico OR ("||").*/
 
-9. Crie uma estrutura condicional que nega uma condição utilizando o operador lógico NOT ("!").
+    const n1 = 25
+    const n2 = 86
+    if ( n1 > 10 || n2 > 12){
+      console.log("Umas das condiçoes é verdadeira")
+    } else
 
-10. Crie uma estrutura condicional que verifica se um número está dentro de um determinado
-intervalo, utilizando os operadores lógicos AND e os operadores de comparação (">=" e "<=").
 
-11. Crie uma estrutura condicional que verifica se um número está fora de um determinado intervalo,
-utilizando os operadores lógicos OR e os operadores de comparação ("<" e ">").
+9. /*Crie uma estrutura condicional que nega uma condição utilizando o operador lógico NOT ("!").*/
 
-12. Crie uma estrutura condicional que verifica se um número é positivo, utilizando o operador de
-maior que (">") e o operador de igualdade ("==") para verificar se o número é maior que zero.
+    const n1 = 15
+    if (!(x > 20)){
+      console.log("n1 é maior que 20")
+    } else {
+      console.log("n1 é maior que 20")
+    }
 
-13. Crie uma estrutura condicional que verifica se uma string é vazia, utilizando o operador de
+/*10. Crie uma estrutura condicional que verifica se um número está dentro de um determinado
+intervalo, utilizando os operadores lógicos AND e os operadores de comparação (">=" e "<=").*/
+
+    let number = 200
+    if (number >= 100 && number <= 1000) {
+      console.log("O número está dentro do intervalo.");
+    } else {
+      console.log("O número não está dentro do intervalo.");
+    }
+
+/*11. Crie uma estrutura condicional que verifica se um número está fora de um determinado intervalo,
+utilizando os operadores lógicos OR e os operadores de comparação ("<" e ">").*/
+
+    let number = 200
+    if (number >= 100 && number <= 1000) {
+      console.log("O número está dentro do intervalo.");
+    } else {
+      console.log("O número não está dentro do intervalo.");
+    }
+
+/*12. Crie uma estrutura condicional que verifica se um número é positivo, utilizando o operador de
+maior que (">") e o operador de igualdade ("==") para verificar se o número é maior que zero.*/
+
+    const numb = -500
+    if (numb > 0) {
+      console.log(`O numero ${numb} é Positivo `)
+    }else if (numb == 0){
+      console.log(`O numero ${numb} é igual a 0 `)
+    }else {
+      console.log(`O numero ${numb} é negativo `)
+    }
+      
+/*13. Crie uma estrutura condicional que verifica se uma string é vazia, utilizando o operador de
 igualdade ("==") e o operador de tamanho ("length") para verificar se o tamanho da string é igual a
-zero.
-14. Crie uma estrutura condicional que verifica se uma variável é do tipo booleano, utilizando o
+zero*/.
+
+      const softex = "front-end"
+
+      if (softex == "") {
+        console.log("A string é vazia")
+      } else{ console.log(`Essa stromg tem ${softex.length} caracteres`)}
+
+/*14. Crie uma estrutura condicional que verifica se uma variável é do tipo booleano, utilizando o
 operador "typeof" e o operador de igualdade ("==") para verificar se o tipo de dado é igual a
-"boolean".
+"boolean".*/
+
+      const teste = true
+      if (typeof teste == "boolean") {
+        console.log("A variável é do tipo booleano.")
+      } else{
+        console.log("A variável não é do tipo booleano.")
+      }
+
+     
+
+
