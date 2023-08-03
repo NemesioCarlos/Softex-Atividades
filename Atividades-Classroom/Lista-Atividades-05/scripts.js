@@ -1,6 +1,7 @@
 
 /*1. Escreva um programa que leia um número inteiro e verifique se ele é positivo, negativo ou igual a
 zero.*/
+
     let n1 = prompt("Digite um numero")
     if (n1 > 0) {
         alert("O numero digitado é positivo")
@@ -10,8 +11,8 @@ zero.*/
         alert("O numero digitado é igual a zero")
     } else {alert("Opção invalida")}
 
-/2. Crie um programa que receba a idade de uma pessoa e exiba se ela é maior de idade ou menor de
-idade.
+/*2. Crie um programa que receba a idade de uma pessoa e exiba se ela é maior de idade ou menor de
+idade.*/
 
     let age = prompt("Digite sua idade")
     if (age>18) {
@@ -20,8 +21,9 @@ idade.
         alert("Menor de idade")
     }
 
-3. Desenvolva um programa que leia dois números inteiros e mostre qual deles é o maior, ou se são
-iguais.
+/*3. Desenvolva um programa que leia dois números inteiros e mostre qual deles é o maior, ou se são
+iguais.*/
+
     let numb1 = parseInt(prompt("Informe um nomero"))
     let numb2 = parseInt(prompt("Informe outro numero"))
     if(numb1 > numb2) {
@@ -34,7 +36,18 @@ iguais.
         alert("Opção invalida")
     }
 
-4. Faça um programa que verifique se um número é par ou ímpar.
+/*4. Faça um programa que verifique se um número é par ou ímpar.
+    let numb1 = prompt("Verifique se um numero é par ou impar")*/
+
+    if (numb1>0) {
+        alert(`O numero ${numb1} é positivo`)
+    } else {
+        alert("O numero é negativo")
+    }
+
+/*5. Elabore um programa que leia três notas de um aluno e calcule a média. Em seguida, exiba se o
+aluno está aprovado (média maior ou igual a 7) ou reprovado.*/
+
     let numb1 = prompt("Verifique se um numero é par ou impar")
     if (numb1>0) {
         alert(`O numero ${numb1} é positivo`)
@@ -42,18 +55,8 @@ iguais.
         alert("O numero é negativo")
     }
 
-5. Elabore um programa que leia três notas de um aluno e calcule a média. Em seguida, exiba se o
-aluno está aprovado (média maior ou igual a 7) ou reprovado.
-
-    let numb1 = prompt("Verifique se um numero é par ou impar")
-    if (numb1>0) {
-        alert(`O numero ${numb1} é positivo`)
-    } else {
-        alert("O numero é negativo")
-    }
-
-6. Crie um programa que receba o nome de duas pessoas e exiba qual delas possui o maior número
-de caracteres em seu nome.
+/*6. Crie um programa que receba o nome de duas pessoas e exiba qual delas possui o maior número
+de caracteres em seu nome.*/
 
 let userName1 = prompt("Digite o primeiro nome")
 let userName2 = prompt("Digite o segundo nome")
@@ -64,37 +67,54 @@ alert(`O nome ${userName1} é maior que o nome ${userName2}`)
 }
 
 
-7. Desenvolva um programa que leia um caractere e verifique se ele é uma vogal ou uma consoante.
-    let letter = prompt("Digite uma letra para saber se é vogal ou consoante")
+/*7. Desenvolva um programa que leia um caractere e verifique se ele é uma vogal ou uma consoante.
+    let letter = prompt("Digite uma letra para saber se é vogal ou consoante")*/
+    
     if ((letter === "a") || (letter === "e") || (letter === "i") || (letter === "o") || (letter === "u")) {
         alert("É vogal")
     } else {
         alert("É consoante")
     }
 
-8. Faça um programa que receba três números e os imprima em ordem crescente.
+/*8. Faça um programa que receba três números e os imprima em ordem crescente.*/
+    
+    let numbers = [
+        prompt("Digite o primeiro numero"),
+        prompt("Digite o segundo numero"),
+        prompt("Digite o terceiro numero"),
+    ]
+    alert(numbers.sort())
 
-
-9. Elabore um programa que calcule o IMC (Índice de Massa Corporal) de uma pessoa, dado o peso e
+/*9. Elabore um programa que calcule o IMC (Índice de Massa Corporal) de uma pessoa, dado o peso e
 a altura. Em seguida, exiba se a pessoa está abaixo do peso, com peso normal, com sobrepeso,
-obesa ou muito obesa.
+obesa ou muito obesa.*/
+
+let imc = weight / (height * height);
+    if (imc < 17) {
+    alert(`IMC: ${imc.toFixed(2)} Abaixo do peso`);
+    } else if (imc >= 18 || imc <= 24) {
+    alert(`IMC: ${imc.toFixed(2)} Peso normal`);
+    } else if (imc >= 25 || imc <= 28) {
+    alert(`IMC: ${imc.toFixed(2)} Acima d peso`);
+    } else {
+    alert(`${imc.toFixed(2)} Obesidade`);
+    }
+
+/*10. Escreva um programa que receba um número de mês (1 a 12) e exiba o nome do mês
+correspondente.*/
 
 
-10. Escreva um programa que receba um número de mês (1 a 12) e exiba o nome do mês
-correspondente.
-
-
-11. Desenvolva um programa que leia o salário de um funcionário e calcule o valor do seu aumento.
+/*11. Desenvolva um programa que leia o salário de um funcionário e calcule o valor do seu aumento.
 Para salários superiores a R$ 1.500,00, o aumento deve ser de 10%. Caso contrário, o aumento é de
-15%.
+15%.*/
 
 
-12. Receba um número inteiro do usuário e verifique se ele é divisível por 3 e por 5 ao mesmo tempo,
-exibindo uma mensagem apropriada.
+/*12. Receba um número inteiro do usuário e verifique se ele é divisível por 3 e por 5 ao mesmo tempo,
+exibindo uma mensagem apropriada.*/
 
 
-13. Peça ao usuário que insira o dia da semana (por extenso) e, em seguida, exiba uma mensagem
-informando se é um dia útil ou um fim de semana.
+/*13. Peça ao usuário que insira o dia da semana (por extenso) e, em seguida, exiba uma mensagem
+informando se é um dia útil ou um fim de semana.*/
 
 
 14. Elabore um programa que leia um número inteiro de 1 a 5 e exiba a mensagem "Muito bom",
