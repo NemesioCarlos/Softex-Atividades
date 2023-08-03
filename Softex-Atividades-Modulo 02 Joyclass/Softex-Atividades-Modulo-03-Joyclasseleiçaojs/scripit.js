@@ -8,7 +8,7 @@ while (true) {
   let voto = prompt("Digite o número do candidato que deseja votar:\n" +"1 - candidato_X\n" +"2 - candidato_Y\n" +"3 - candidato_Z\n" +"0 - branco\n" +"Para finalizar a votação, digite 'fim'")
 
   if (voto.toLowerCase() === "fim") {
-    break;
+    break
   }
 
   voto = parseInt(voto)
@@ -30,16 +30,16 @@ while (true) {
 nulo = nulo + blank
 
 if (candidate_X > candidate_Y && candidate_X > candidate_Z) {
-    winner = "Candidato X";
+    winner = "Candidato X"
   } else if (candidate_Y > candidate_X && candidate_Y > candidate_Z) {
-    winner = "Candidato Y";
+    winner = "Candidato Y"
   } else if (candidate_Z > candidate_X && candidate_Z > candidate_Y) {
-    winner = "Candidato Z";
+    winner = "Candidato Z"
   } else {
-    winner = "Empate";
+    winner = "Empate"
   }
   
   alert(`Resultado da Eleição:\n Candidato X ${candidate_X} votos\n Candidato Y ${candidate_Y} votos\n Candidato Z ${candidate_Z} votos\n Nulos ${nulo}\n 
-  O vencendor foi o ${winner} `);
+  O vencendor foi o ${winner} `)
 
 
