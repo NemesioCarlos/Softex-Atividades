@@ -101,13 +101,40 @@ let imc = weight / (height * height);
     }
 
 /*10. Escreva um programa que receba um número de mês (1 a 12) e exiba o nome do mês
-correspondente.*/
+correspondente.*/ 
+    let months = [
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abriu",
+            "Maio",
+            "Junho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro",
+        ]
+    
+        let numberMonth = (prompt("Digite o numero do mês "))
+    
+        let monthName = months [numberMonth - 1]
+    
+        alert(` ${monthName} `)
 
 
 /*11. Desenvolva um programa que leia o salário de um funcionário e calcule o valor do seu aumento.
 Para salários superiores a R$ 1.500,00, o aumento deve ser de 10%. Caso contrário, o aumento é de
 15%.*/
-
+    let novoSalarioFuncionario = 0
+    
+        let salarioFuncionario = parseFloat(prompt("Digite o salario "))
+    
+    
+        if (salarioFuncionario > 1500) {
+        alert( novoSalarioFuncionario = salarioFuncionario + (salarioFuncionario * 10 / 100))
+            } else alert( novoSalarioFuncionario = salarioFuncionario + (salarioFuncionario * 15 / 100))
+     
 
 /*12. Receba um número inteiro do usuário e verifique se ele é divisível por 3 e por 5 ao mesmo tempo,
 exibindo uma mensagem apropriada.*/
@@ -117,10 +144,28 @@ exibindo uma mensagem apropriada.*/
 informando se é um dia útil ou um fim de semana.*/
 
 
-14. Elabore um programa que leia um número inteiro de 1 a 5 e exiba a mensagem "Muito bom",
-"Bom", "Regular", "Insuficiente" ou "Muito insuficiente", de acordo com o valor lido, utilizando
-switch/case.
+//14. Elabore um programa que leia um número inteiro de 1 a 5 e exiba a mensagem "Muito bom",
+//"Bom", "Regular", "Insuficiente" ou "Muito insuficiente", de acordo com o valor lido, utilizando switch/case.
 
+        let i = parseInt(prompt("Digite um numero de 1 a 5"))
+    
+    
+        switch (i) {
+            case 1:
+                alert(`${i}: Muito bom!`) 
+                break
+            case 2:
+                alert(`${i}: Bom!`)
+                break
+            case 3:
+                alert(`${i}: Regular!`)
+                break
+            case 4:
+                alert(`${i}: Insuficiente!`)
+                break
+            case 5:
+                alert(`${i}: Muito Insuficiente!`)
+    }
 
 15. Peça ao usuário que digite um número entre 1 e 7 e exiba o dia da semana correspondente (1 -
 Domingo, 2 - Segunda-feira, etc.).
