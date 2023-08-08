@@ -139,10 +139,24 @@ Para salários superiores a R$ 1.500,00, o aumento deve ser de 10%. Caso contrá
 /*12. Receba um número inteiro do usuário e verifique se ele é divisível por 3 e por 5 ao mesmo tempo,
 exibindo uma mensagem apropriada.*/
 
-
+let number = prompt("Digite um numero")
+    if (number % 3 === 0 && number % 5 === 0) {
+        alert(`O numero ${number} é divisivel por 3 e 5`)
+    } else {
+        alert(`O numero ${number} não é divisivel por 3 e 5`)
+    }
 /*13. Peça ao usuário que insira o dia da semana (por extenso) e, em seguida, exiba uma mensagem
 informando se é um dia útil ou um fim de semana.*/
 
+let dayWeek = (prompt("Insira o dia da semana (por extenso):"))
+
+    if (dayWeek === "segunda-feira" || dayWeek === "terça-feira" || dayWeek === "quarta-feira" || dayWeek === "quinta-feira" || dayWeek === "sexta-feira") {
+        alert("É um dia útil.");
+    } else if (dayWeek === "sábado" || dayWeek === "domingo") {
+        alert("É um fim de semana.");
+    } else {
+        alert("Dia da semana inválido.");
+    }
 
 //14. Elabore um programa que leia um número inteiro de 1 a 5 e exiba a mensagem "Muito bom",
 //"Bom", "Regular", "Insuficiente" ou "Muito insuficiente", de acordo com o valor lido, utilizando switch/case.
