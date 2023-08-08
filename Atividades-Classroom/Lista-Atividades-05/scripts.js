@@ -106,7 +106,7 @@ correspondente.*/
             "Janeiro",
             "Fevereiro",
             "Março",
-            "Abriu",
+            "Abril",
             "Maio",
             "Junho",
             "Agosto",
@@ -167,29 +167,133 @@ informando se é um dia útil ou um fim de semana.*/
                 alert(`${i}: Muito Insuficiente!`)
     }
 
-15. Peça ao usuário que digite um número entre 1 e 7 e exiba o dia da semana correspondente (1 -
-Domingo, 2 - Segunda-feira, etc.).
+//15. Peça ao usuário que digite um número entre 1 e 7 e exiba o dia da semana correspondente (1 - Domingo, 2 - Segunda-feira, etc.).
 
+    const days = [
+        'Domingo',
+        'Segunda-feira',
+        'Terça-feira',
+        'Quarta-feira',
+        'Quinta-feira',
+        'Sexta-feira',
+        'Sábado'
+    ]
+    const number = parseInt(prompt('Digite um número entre 1 e 7:'));
+    const day = days[number - 1];
+    
+    if (day) {
+        alert(day);
+    } else {
+        alert('Número inválido');
+    }
+//16. Receba um número decimal do usuário e arredonde-o para o inteiro mais próximo usando a
+//estrutura de controle try/catch para tratar exceções.
+    try {
+  
+    var numeroDecimal = prompt("Insira um número decimal:");
+    var numero = parseFloat(numeroDecimal);
+  
+    if (isNaN(numero)) {
+        throw new Error("Entrada inválida.");
+    }
+  
+    var numeroArredondado = Math.round(numero);
+    alert("O número arredondado para o inteiro mais próximo é: " + numeroArredondado);
+   } catch (error) {
+    alert("Ocorreu um erro: " + error.message);
+   }
 
-16. Receba um número decimal do usuário e arredonde-o para o inteiro mais próximo usando a
-estrutura de controle try/catch para tratar exceções.
+//17. Peça ao usuário que insira a sua idade e verifique se ele é um bebê (0 a 1 ano), criança (1 a 12
+//anos), adolescente (13 a 18 anos) ou adulto (mais de 18 anos).
+    const age = parseInt(prompt('Informe a idade:'));
 
+    if (age >= 0 && age <= 1) {
+    alert('É um bebê');
+    } else if (age > 1 && age <= 12) {
+    alert("uma criança");
+    } else if (age > 12 && age <= 18) {
+    alert("Um adolescente");
+    } else if (age > 18) {
+    alert('Um adulto');
+    } else {
+    alert('Idade invalida');
+    }
 
-17. Peça ao usuário que insira a sua idade e verifique se ele é um bebê (0 a 1 ano), criança (1 a 12
-anos), adolescente (13 a 18 anos) ou adulto (mais de 18 anos).
+//18. Peça ao usuário que insira o seu estado civil e, usando a estrutura switch/case, exiba uma
+//mensagem informando se é solteiro, casado, divorciado ou viúvo.
+    const estadoCivil = prompt('Digite o seu estado civil:');
 
+    switch (estadoCivil) {
+        case 'solteiro':
+            alert('Você é solteiro');
+            break;
+        case 'casado':
+            alert('Você é casado');
+            break;
+        case 'divorciado':
+            alert('Você é divorciado');
+            break;
+        case 'viúvo':
+            alert('Você é viúvo');
+            break;
+        default:
+            alert('Estado civil inválido');
+    }
 
-18. Peça ao usuário que insira o seu estado civil e, usando a estrutura switch/case, exiba uma
-mensagem informando se é solteiro, casado, divorciado ou viúvo.
+//19. Solicite ao usuário dois números inteiros e, usando a estrutura switch/case, exiba o resultado da
+//operação escolhida pelo usuário (1 - soma, 2 - subtração, 3 - multiplicação, 4 - divisão).
+    let numero1 = parseInt(prompt('Digite o primeiro número:'));
+    let numero2 = parseInt(prompt('Digite o segundo número:'));
+    let operacao = parseInt(prompt('Digite a operação desejada (1 - soma, 2 - subtração, 3 - multiplicação, 4 - divisão):'));
 
+    switch (operacao) {
+    case 1:
+        alert(numero1 + numero2);
+        break;
+    case 2:
+        alert(numero1 - numero2);
+        break;
+    case 3:
+        alert(numero1 * numero2);
+        break;
+    case 4:
+        alert(numero1 / numero2);
+        break;
+    default:
+        alert('Operação inválida');
+    }
 
-19. Solicite ao usuário dois números inteiros e, usando a estrutura switch/case, exiba o resultado da
-operação escolhida pelo usuário (1 - soma, 2 - subtração, 3 - multiplicação, 4 - divisão).
+//20. Desenvolva um programa que leia o nome e a idade de uma pessoa. Utilize o bloco try/catch para
+//garantir que a idade digitada seja um valor inteiro válido.
 
+    try {
+        let nome = prompt('Digite o seu nome:');
+        let idade = parseInt(prompt('Digite a sua idade:'));
+    
+        if (isNaN(idade)) {
+        throw new Error('Idade inválida');
+        }
+    
+        alert(`Nome: ${nome}`);
+        alert(`Idade: ${idade}`);
+    } catch (error) {
+        alert(error.message);
+    }
+//21. Crie um programa que leia um valor em metros e o converta para centímetros, milímetros e
+//quilômetros. Utilize o bloco try/catch para tratar possíveis exceções durante os cálculos.
 
-20. Desenvolva um programa que leia o nome e a idade de uma pessoa. Utilize o bloco try/catch para
-garantir que a idade digitada seja um valor inteiro válido.
+try {
+  let metros = parseFloat(prompt('Digite o valor em metros:'));
 
+  if (isNaN(metros)) {
+    throw new Error('Valor inválido');
+  }
 
-21. Crie um programa que leia um valor em metros e o converta para centímetros, milímetros e
-quilômetros. Utilize o bloco try/catch para tratar possíveis exceções durante os cálculos.
+  let centimetros = metros * 100;
+  let milimetros = metros * 1000;
+  let quilometros = metros / 1000;
+
+  alert(`${metros} metros equivalem a ${centimetros} centímetros, ${milimetros} milímetros e ${quilometros} quilômetros`);
+} catch (error) {
+  alert(error.message);
+}
