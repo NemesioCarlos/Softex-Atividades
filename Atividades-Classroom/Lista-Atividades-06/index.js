@@ -36,10 +36,25 @@ for (let i = 0; i < 10; i++){
 
 //9. Implemente o código do slide de número 44.
 
+let nomes = [
+    "Nemésio",
+    "Carlos",
+    "Algusto",
+    "José",
+    "Marluce"
+]
+for (let n of nomes) {
+    console.log(n)
+}
 
 //10. Faça um programa que exiba os números de 1 a 10 em ordem crescente.
 
+for(let j = 1; j <= 10; j++) {
+    console.log(j)
+}
 //11. Crie um programa que exiba os números de 10 a 1 em ordem decrescente.
+
+for(let i = 10; j > 10;  )
 
 //12. Elabore um programa que calcule a soma dos números de 1 a 100.
 
